@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(83, 20, 230, 0.911);
+}
+
+section#apresentacao{
+    padding: 15px;
+}
+
+
+div#principal{
+    position: relative;
+    margin-bottom: 200px;
+    margin-left: 250px;
+    margin-right: 835px;
+    width: 500px;
+    top: 90px;
+
+
+}
+
+div#principal p{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 50px;
+    font-size: 21px;
+    color: #ffff;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+div#principal h3{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Bangers', cursive;
+    color: #ffff;
+    margin-left: 12px;
+}
+
+/*EFEITO DE DIGITAÇÃO ABERTURA*/
+div#principal p{
+    color: lime; 
+    text-shadow: 5px 10px 10px rgb(150, 39, 214);
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+  }
+
+div#principal p:nth-child(2){
+    animation: type2 4s steps(60, end);
+  }
+  
+
+  @keyframes type2{ 
+    from { width: 0; } 
+    
+  } 
+  
+  @keyframes type{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+  ::selection{
+    background: black;
+  }
+
+/*SOBRE MIM*/
+
+div#sobre-mim{
+    color: #ffffff;
+}
+
+div#sobre-mim h1{
+    text-shadow: 2px 5px 3px rgba(15, 12, 238, 0.867);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Bangers', cursive;
+}
+div#sobre-mim{
+    margin-left: -20px;
+    background-color: #331259;
+    padding: 50px 20px;
+    margin-top: 2%;
+    width: 100%;
+    margin-bottom: 2%;
+    color: white;
+    display: inline-block 
+    
+
+}
+
+
+#sobre-mim p {
+    width: 50%;
+    text-justify: center;
+    float: left;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Indie Flower', cursive;
+}
+
+/*Formatação do Menu*/
+
+.container{
+    max-width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    background-color: #000000;
+    width: 100%;
+    color: #ffff;
+}
+
+.logo,.social{
+    width: 25%;
+    cursor: pointer;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content:" ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, rgba(102, 43, 241, 0.911), rgb(233, 24, 24) );
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: width 1s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.social button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, rgba(102, 43, 241, 0.911), rgb(233, 24, 24) );
+    border: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.social button i {
+    font-size: 20px;
+    color: #ffff;
+}
+
+.logo p{
+    display: flex;
+    position: absolute;
+    top: 45px;
+    left: 100px;
+}
+
+.logo h1{
+    display: flex;
+    position: relative;
+    top: -10px;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 0px 20px 3px #ffff;
+}
