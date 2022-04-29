@@ -8,8 +8,28 @@ body{
     background-color: #5314e6e8;
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 section#apresentacao{
     padding: 15px;
+}
+
+button.botao-prj{
+    padding: 12px;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Bangers', cursive;
+    border-radius: 10%;
+}
+
+button.botao-prj-2{
+    margin-left: 200px;
+    padding: 12px;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Bangers', cursive;
+    border-radius: 10%;
 }
 
 footer#rodape{
@@ -26,6 +46,51 @@ footer#rodape p{
 }
 
 
+div#projeto1{
+    background-color: #363636;
+    color: #ffff;
+    padding-left: 20px;
+    margin-right: 600px;
+    margin-left: 100px;
+    border: 5px solid #6410c4 ;
+
+}
+
+div#projeto2{
+    color: #ffffff;
+    background-color:#363636 ;
+    padding:10px;
+    padding-left:20px; ;
+    margin-left: 700px;
+    margin-right: 45px;
+    position: relative;
+    border: 5px solid #6410c4 ;
+    top: -59px;
+    
+}
+
+div#projeto2 h2{
+    padding-top: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Bangers', cursive;
+    font-size: 17px;
+    text-align: center;
+}
+
+div#projeto1 h2{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Bangers', cursive;
+    font-size: 17px;
+    text-align: center;
+}
+
+h1#titulo-prj{
+    position: relative;
+    top: -50px;
+    color: #fff;
+    margin-left: 10px;
+    text-shadow: 0px 7px 10px black;
+}
 
 div#principal{
     position: relative;
@@ -159,7 +224,7 @@ header{
 .menu nav a{
     text-decoration: none;
     color: #ffffff;
-    padding-right: 50px;
+    padding-right: 50px; /*50px*/
     font-size: 18px;
     position: relative;
 }
