@@ -152,6 +152,13 @@ div#sobre-mim{
     font-size: 19px;
 }
 
+/*Projetos*/
+
+#projetos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
 /*Formatação do Menu*/
 
 .container{
