@@ -18,12 +18,12 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track{
-    background: #00cc99;
+    background: #5f00cc;
     border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #6600ff;
+    background: #000000;
     border-radius: 50px;
 }
 
@@ -33,10 +33,11 @@ section#apresentacao{
 }
 
 footer#rodape{
-    background-image: linear-gradient(to bottom, #5314e6e8, #170547e8);
+    background-image: linear-gradient(45deg, #5314e646, #17054794);
 	color: rgb(0, 0, 0);
     height: 100px;
     padding-top: 50px;
+    display: none;
 }
 
 footer#rodape p{
@@ -76,8 +77,8 @@ div#principal h3{
 
 /*EFEITO DE DIGITAÇÃO ABERTURA*/
 div#principal p{
-    color: lime; 
-    text-shadow: 5px 10px 10px rgb(150, 39, 214);
+    color: rgb(255, 255, 255); 
+    text-shadow: 5px 10px 10px rgb(0, 0, 0);
     font-family: "Courier";
     font-size: 20px;
     margin: 10px 0 0 10px;
@@ -133,10 +134,12 @@ div#sobre-mim{
     margin-bottom: 2%;
     color: white;
     display: inline-block 
-    
 
 }
 
+#sobre-mim{
+    border-radius: 5%;
+}
 
 #sobre-mim p {
     width: 50%;
@@ -145,8 +148,7 @@ div#sobre-mim{
     margin-top: 0%;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Indie Flower', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
 }
 
@@ -182,6 +184,7 @@ header{
     padding-right: 50px;
     font-size: 18px;
     position: relative;
+    right: 20px ;
 }
 
 .menu nav a::after{
