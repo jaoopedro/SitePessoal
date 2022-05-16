@@ -129,9 +129,10 @@ div#sobre-mim h1{
 }
 div#sobre-mim{
     margin-left: -20px;
-    background-color: #331259;
+    background-color: #3a3341;
     padding: 50px 20px;
-    margin-top: 2%;
+    padding-bottom: 0;
+    margin-top: 9.5%;
     width: 100%;
     margin-bottom: 2%;
     color: white;
@@ -161,7 +162,7 @@ div#sobre-mim{
     color: #fff;
     font-size: 20px;
     text-align: center;
-    text-shadow: 2px 5px 3px rgb(67, 67, 69);
+    text-shadow: 2px 5px 3px rgba(15, 12, 238, 0.867);
 }
 
 #projeto-1 h3{
@@ -179,14 +180,39 @@ div#sobre-mim{
     height: 125px;
     padding: 10px;
     padding-left: 15px;
-    color: #fff;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10%;
+    text-align: center;
+
+}
+#projeto-2{
+    background-color: #242323;
+    width: 300px;
+    height: 125px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10%;
+    text-align: center;
+}
+
+div#projeto-2{
+    position: relative;
+    left: 400px;
+    top: -143px;
 
 }
 
+#projeto-2 h3{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Pacifico', cursive;
+}
+
 div#projetos{
-    
+    margin-top: 10%;
+    color: #ffff;   
+
 }
 
 /*Formatação do Menu*/
