@@ -199,16 +199,39 @@ div#projeto-1{
 
 div#projeto-2{
     position: relative;
-    left: 400px;
-    top: -143px;
-
+    left: 280px;
+    margin-top: 10px;
 }
+
+
+
 
 #projeto-2 h3{
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-family: 'Caveat', cursive;
     font-family: 'Pacifico', cursive;
+}
+
+#projeto-3 h3{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Pacifico', cursive;
+}
+
+#projeto-3{
+    background-color: #2b2b2b;
+    width: 300px;
+    height: 125px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+#projeto-3{
+    position: relative;
+    left: 540px;
+    margin-top: 10px;
 }
 
 div#projetos{
