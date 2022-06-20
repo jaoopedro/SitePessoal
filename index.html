@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5eed80561d.js" crossorigin="anonymous"></script>
     <link rel="icon" href="imagens/procurar.png">
+    <script type="text/javascript" src="script.js"></script>
     <title>Joao Pedro</title>
 
 </head>
 <body>
+	
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>João Pedro</h1>
-                    
-            </div>
-            <div class="menu">
-                <nav>
-                    <a href="index.html">Home</a>
-                    
-                    <a href="#sobre-mim">Sobre</a>
-                    <a href="#projeto-1">Projetos</a>
-                    <a href="imagens/Curriculo Joao Pedro Marcos (1) (1).pdf" download="Curriculo JoaoPedro" target="_blank">Curriculo</a>
-                    
+        <div class="overlay-content">
+            <a href="#sobre-mim">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="imagens/Curriculo Joao Pedro Marcos (1) (1).pdf" download="Curriculo JoaoPedro" target="_blank">Curriculo</a>
+            <a href="mailto:jpmarcosnunes@gmail.com">Contato</a>
+        </div>
 
-                   
+    </div>
 
-                </nav>
+    <!--BOTÃO PARA APARECER O MENU-->
+    <button class="nav-button" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
 
-    </header>
     
 <div id="interface">
     <section id="apresentacao">
+    
         <div id="principal">
             <h3>Olá, me chamo</h3>
             <p>João Pedro Marcos</p>
@@ -80,14 +79,14 @@
     </footer>
 
 </div>
-<footer>
-</div>
+<footer id="rodape">
+
 <div class="social">
     <a href="https://www.instagram.com/jaoopedr01/?hl=pt-br" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
     <a href="https://github.com/jaoopedro" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
     <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-nunes-5295b0183/" target="_blank"><button><i class="fa-brands fa-linkedin-in"></i></button></a>
 </div>
-</div>
+
 </footer>
 </body>
 </html>
