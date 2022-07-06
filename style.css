@@ -8,7 +8,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #000000e8;
-    ;
+    background-image: linear-gradient(to right, rgb(64, 40, 104), rgb(49, 52, 85));
 }
 
 
@@ -23,7 +23,7 @@ html{
     border: 0;
     border-radius: 4px;
     padding: 8px;
-    background-color:rgba(105, 101, 101, 0.867);
+    background-color:rgba(2, 2, 2, 0.867);
     margin: 8px;
     cursor: pointer;
 
@@ -36,7 +36,7 @@ html{
 
 .overlay{
     width: 0; /*PARA O MENU COMEÇAR FECHADO*/
-    height:100%;
+    height:60%; /*Altura do menu*/
     background-color: rgba(0,0,0,0.9) ;
     z-index: 9 ; /*PARA FICAR POR CIMA DO CONTEUDO DO SITE*/
     position:fixed;
@@ -191,6 +191,19 @@ div#principal p:nth-child(2){
 
 /*SOBRE MIM*/
 
+#img{
+    width: 280px;
+    position: relative;
+    float: right;
+    margin-right: 25px;
+    margin-top: 69px;
+    border-radius: 45%;
+}
+
+#musica{
+    margin-top: 25px;
+   
+}
 
 div#sobre-mim{
     color: #ffffff;
@@ -215,13 +228,10 @@ div#sobre-mim{
     margin-bottom: 2%;
     color: white;
     display: inline-block;
-    box-shadow: 0px 0px 15px rgb(22, 22, 22);    
+    box-shadow: 5px 2px 25px rgb(0, 0, 0);    
     padding-bottom: 25px;
 }
 
-#sobre-mim{
-    border-radius: 5%;
-}
 
 #sobre-mim p {
     width: 50%;
@@ -229,10 +239,10 @@ div#sobre-mim{
     float: left;
     margin-top: 0%;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -269,6 +279,7 @@ div#projeto-1{
     text-align: center;
     left: 300px;
     position: relative;
+    box-shadow: 0px 0px 10px white;
 
 }
 #projeto-2{
@@ -286,6 +297,7 @@ div#projeto-2{
     position: relative;
     left: 300px;
     margin-top: 10px;
+    box-shadow: 0px 0px 10px white;
 }
 
 
@@ -310,6 +322,7 @@ div#projeto-2{
     height: 125px;
     padding: 10px;
     border-radius: 10%;
+    box-shadow: 0px 0px 10px white;
 }
 
 #projeto-3{
@@ -324,6 +337,16 @@ div#projetos{
 
 }
 
+/*Formatação da interface*/
+
+#interface{
+    width: 1000px;
+    position: relative; /*Posição relativa dentro da div*/
+    margin: 10px auto -11px auto;
+    padding: 10px;
+    background-color: #2b1a50;
+    border-radius: 0.25%;
+}
 
 
 
@@ -363,7 +386,7 @@ div#projetos{
 /*Formatação do rodapé*/
 
 footer#rodape p{
-    border-top: 1px solid rgb(3, 3, 3);
+    border-top: 1px solid rgb(72, 41, 90);
     height: 20px;
     padding-top: 65px;
     display: block;
@@ -377,4 +400,18 @@ footer#rodape p{
 
 footer#rodape button{
     margin-bottom: 20px;
+}
+
+
+/*FORMATAÇÃO DO BOTAO TOPO*/
+
+#link-topo{
+	text-decoration: none;
+	color: rgb(172, 165, 179);
+	padding: 6px;
+	background-color: #3e384b;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	box-shadow: 3px 3px 10px rgb(59, 58, 58);
 }
