@@ -23,9 +23,10 @@ html{
     border: 0;
     border-radius: 4px;
     padding: 8px;
-    background-color:rgba(2, 2, 2, 0.867);
+    background-color:rgba(8, 2, 43, 0.867);
     margin: 8px;
     cursor: pointer;
+    position: fixed;
 
 }
 
@@ -279,9 +280,6 @@ div#projeto-1{
 
 }
 
-#projeto-1 p:hover{
-    padding-left: -100px;
-}
 
 #projeto-2{
     background-color: #242323;
@@ -388,7 +386,7 @@ div#projetos{
 /*Formatação do rodapé*/
 
 footer#rodape p{
-    border-top: 1px solid rgb(72, 41, 90);
+    border-top: 1px solid rgb(17, 3, 56);
     height: 20px;
     padding-top: 65px;
     display: block;
