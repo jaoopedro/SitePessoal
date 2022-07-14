@@ -125,6 +125,7 @@ section#apresentacao{
     margin-right: 25px;
     top: -140px;
     border-radius: 45%;
+    box-shadow: 0px 20px 50px rgb(0, 0, 0);
 }
 
 /*Div principal da apresentação*/
@@ -216,7 +217,7 @@ div#sobre-mim h1{
 
 div#sobre-mim{
     margin-left: -20px;
-    background-color: #2b2b2b;
+    background-color: #2b2b2b9c;
     padding: 50px 20px;
     padding-bottom: 2px;
 
