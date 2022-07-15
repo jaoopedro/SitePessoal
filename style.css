@@ -344,8 +344,8 @@ div#projetos{
     position: relative; /*Posição relativa dentro da div*/
     margin: 10px auto -11px auto;
     padding: 10px;
-    background-color: #24242513;
-    box-shadow: 0px 0px 10px black;
+    background-color: #24242500; /*Deixando a interface transparente*/
+   /* box-shadow: 0px 0px 10px black;*/
     border-radius: 0.25%;
 }
 
