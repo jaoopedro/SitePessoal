@@ -218,13 +218,13 @@ div#sobre-mim h1{
 div#sobre-mim{
     margin-left: -20px;
     background-color: #2b2b2b9c;
-    padding: 50px 20px;
     padding-bottom: 2px;
-
+    padding-top: 0;
     width: 100%;
     margin-bottom: 2%;
     color: white;
     display: inline-block;
+    margin-top: 20px;
     box-shadow: 5px 2px 25px rgb(0, 0, 0);    
     padding-bottom: 25px;
 }
@@ -239,7 +239,7 @@ div#sobre-mim{
     margin-right: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
-    text-align: justify;
+ 
 }
 
 
@@ -323,6 +323,7 @@ div#projeto-2{
     padding: 10px;
     border-radius: 10%;
     box-shadow: 0px 0px 10px white;
+    margin-bottom: 40px;
 }
 
 #projeto-3{
