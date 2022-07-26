@@ -19,78 +19,87 @@ html{
 
 /*MENU NOVO RESPONSIVO*/
 
-.nav-button{
-    border: 0;
-    border-radius: 4px;
-    padding: 8px;
-    background-color:rgba(8, 2, 43, 0.867);
-    margin: 8px;
-    cursor: pointer;
-    position: fixed;
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #f7f2f2;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+	
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover
+{
+	font-weight: bold;
+}
+.nav li
+{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav
+{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top:0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#542ce7cc,#0d11e04d);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index:2;
 
 }
-
-.nav-button i{
-    color: #ffff;
+.change-bg
+{
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
 }
-
-
-.overlay{
-    width: 0; /*PARA O MENU COMEÇAR FECHADO*/
-    height:60%; /*Altura do menu*/
-    background-color: rgba(0,0,0,0.9) ;
-    z-index: 9 ; /*PARA FICAR POR CIMA DO CONTEUDO DO SITE*/
-    position:fixed;
-    left:0;
-    top:0;
-    overflow-x: hidden;
-    transition:all 0.5s;
+.change .bar{
+	background-color: white;
 }
-
-/*ARRUMANDO POSICIONAMENTODOS ITENS DENTRO DO MENU*/
-
-.overlay-content{
-
-    position:relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px ;
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
 }
-
-.overlay a{
-    padding: 8px;
-    text-decoration: none;
-    color:#818181;
-    display: block; /*PARA OS ITENS FICAREM UM EMBAIXO DO OUTRO*/
-    font-size:34px;
-    transition: 0.5s;
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
 }
-
-.overlay a:hover , .overlay a:focus{
-    color: #f1f1f1;
+.change #bar2{
+	opacity: 0;
 }
-
-.overlay .closebtn{
-    position:absolute;
-    top:25px;
-    right:45px;
-    font-size:60px;
-
-}
-
-/*RESPONSIVIDADE*/
-
-@media screen and (max-width: 450px){
-    .overlay a {
-        font-size:20px;
-    }
-    .overlay , .closebtn{
-        font-size:40px;
-        top:15px;
-        right:35px;
-    }
-}
+.change{
+	display: block;
+} 
 
 
 
@@ -119,9 +128,9 @@ section#apresentacao{
 }
 
 #img{
-    width: 280px;
+    max-width: 100%;
     position: relative;
-    left: 450px;
+    left: 550px;
     margin-right: 25px;
     top: -140px;
     border-radius: 45%;
@@ -135,7 +144,7 @@ div#principal{
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 835px;
-    width: 500px;
+    max-width: 100%;
     top: 90px;
 
 
@@ -194,7 +203,7 @@ div#principal p:nth-child(2){
   }
   
   ::selection{
-    background: black;
+    background: rgb(0, 0, 0);
   }
 
 
@@ -207,7 +216,7 @@ div#sobre-mim{
 }
 
 div#sobre-mim h1{
-    text-shadow: 2px 5px 3px rgba(15, 12, 238, 0.867);
+    text-shadow: 2px 5px 3px rgba(112, 65, 165, 0.867);
     font-size: 25px;
     text-align: center;
     font-family: 'Amatic SC', cursive;
@@ -216,7 +225,6 @@ div#sobre-mim h1{
 }
 
 div#sobre-mim{
-    margin-left: -20px;
     background-color: #2b2b2b9c;
     padding-bottom: 2px;
     padding-top: 0;
@@ -232,7 +240,6 @@ div#sobre-mim{
 
 #sobre-mim p {
     width: 50%;
-    text-justify: center;
     float: left;
     margin-top: 0%;
     margin-left: 15%;
@@ -245,13 +252,16 @@ div#sobre-mim{
 
 
 /*Formatação da area Projetos*/
-
+#projetos{
+    
+    padding-bottom: 20px;
+}
 #projetos h1{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 30px;
     position: relative;
-    left:400px;
+    text-align: center;
     text-shadow: 2px 5px 3px rgba(15, 12, 238, 0.867);
     margin-bottom: 5%;
 }
@@ -275,8 +285,9 @@ div#projeto-1{
     border-radius: 10%;
     text-align: center;
     left: 300px;
-    padding-bottom: 20px;
+    align-items: center;
     position: relative;
+    padding-bottom: 20px;
     box-shadow: 0px 0px 10px white;
 
 }
@@ -338,16 +349,37 @@ div#projetos{
 
 }
 
+/*ABA CUR*/
+
+#cursos{
+    background-color: #2b2b2b9c;
+    color:#FFFF;
+    text-align: center
+
+}
+
+#cursos h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 5px 3px rgba(15, 12, 238, 0.867);
+    margin-bottom: 5%;
+}
+
+
+
 /*Formatação da interface*/
 
 #interface{
-    width: 1000px;
+    max-width: 100%;
     position: relative; /*Posição relativa dentro da div*/
     margin: 10px auto -11px auto;
     padding: 10px;
     background-color: #24242500; /*Deixando a interface transparente*/
    /* box-shadow: 0px 0px 10px black;*/
-    border-radius: 0.25%;
+
 }
 
 
@@ -386,7 +418,9 @@ div#projetos{
 }
 
 /*Formatação do rodapé*/
-
+footer#rodape{
+    max-width: 100%;
+}
 footer#rodape p{
     border-top: 1px solid rgb(17, 3, 56);
     height: 20px;

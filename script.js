@@ -1,8 +1,11 @@
-function openNav(){
-   document.getElementById("myNav").style.width ='100%';
-   
+//alert('Bem-vindo ao meu site de portifolio 😎')
+function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+	document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-function closeNav(){
-    document.getElementById("myNav").style.width ='0%';
-}
+/*
+function aba(){
+	alert("Ainda não é Possivel fazer doações 😭");
+}*/
